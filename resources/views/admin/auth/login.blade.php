@@ -21,7 +21,7 @@
         <div class="flex flex-col">
 
             <img src="{{ asset('images/logo.png') }}" alt="SukyCMS" class="w-32 mx-auto my-12">
-            <div class="w-full lg:w-3/5 mx-auto p-8 rounded-lg">
+            <div class="w-full lg:w-2/5 mx-auto p-8 rounded-lg">
 
                 <form action="{{ route('admin.login') }}" method="POST">
                     @csrf
