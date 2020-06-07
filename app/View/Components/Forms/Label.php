@@ -4,20 +4,18 @@ namespace App\View\Components\Forms;
 
 use Illuminate\View\Component;
 
-class Input extends Component
+class Label extends Component
 {
-    public string $id;
-    public string $name;
+    public string $for;
 
     /**
      * Create a new component instance.
      *
-     * @param string $name
+     * @param string $for
      */
-    public function __construct(string $name)
+    public function __construct(string $for)
     {
-        $this->name = $name;
-        $this->id = strtolower($name);
+        $this->for = $for;
     }
 
     /**
@@ -27,6 +25,6 @@ class Input extends Component
      */
     public function render()
     {
-        return view('components.forms.input');
+        return view('components.forms.label');
     }
 }

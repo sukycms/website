@@ -1,16 +1,23 @@
 <?php
 
+use App\Admin;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     *
-     * @return void
-     */
-    public function run()
+    public function run(): void
     {
-        // $this->call(UserSeeder::class);
+        $this->createAdmin();
+    }
+
+    private function createAdmin(): Admin
+    {
+        $admin = new Admin();
+        $admin->name = 'Admin';
+        $admin->email = 'sukycms@gmail.com';
+        $admin->password = bcrypt('secret');
+        $admin->save();
+
+        return $admin;
     }
 }

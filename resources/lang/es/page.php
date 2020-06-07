@@ -10,6 +10,7 @@ return [
         'text' => 'Recibirás los avances y novedades del proyecto en tu buzón',
         'email' => 'Introduce tu email...',
         'submit' => 'Suscribirme',
+        'success' => 'Te has suscrito correctamente ¡Gracias!',
     ],
 
     'sections' => [
@@ -49,10 +50,10 @@ return [
     'team' => [
         'title' => 'El <span>equipo</span> del proyecto',
         'suky' => 'Conocida como "perra cojín". Ella es la culpable de que este proyecto exista. Adoptada en 2012.',
-        'ahri' => 'Conocida como "gorda". Dentro, muy dentro, al fondo del todo... tiene un corazoncito. Salvada en 2014.',
+        'ahri' => 'Conocida como "gorda". Dentro, muy adentro, al fondo del todo... tiene un corazoncito. Salvada en 2014.',
         'jaime' => 'El papi. Las llama "mis niñas". Creador del proyecto, programador y amante de los animales.',
         'kata' => 'Conocida como "tuerta". No existe en ninguno de los universos una gata más buena. Salvada en 2017.',
-        'lisa' => 'Conocida como "demonio o chica". Su maullido es molesto y agradable a la vez. Salvada en 2019.',
+        'lisa' => 'Conocida como "demonio" o "chica". Su maullido es molesto y agradable a la vez. Salvada en 2019.',
     ],
 
     'more-info' => [
@@ -62,5 +63,17 @@ return [
     'footer' => [
         'copyright' => 'Copyright &copy; :date. Todos los derechos reservados.',
         'made' => 'Hecho por :author con',
-    ]
+    ],
+
+    'forms' => [
+        'email' => 'Correo electrónico',
+        'password' => 'Contraseña',
+        'login' => 'Acceder',
+
+        'notification' => [
+            'error' => [
+                'text' => 'Ha ocurrido un error, revisa el formulario.',
+            ],
+        ],
+    ],
 ];

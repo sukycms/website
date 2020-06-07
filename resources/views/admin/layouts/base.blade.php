@@ -16,11 +16,11 @@
 </head>
 <body>
 
-    <x-header/>
+    <x-admin.header/>
 
     @yield('content')
 
-    <x-footer/>
+    <x-admin.footer/>
 
     <!-- Scripts -->
     <script src="{{ mix('build/app.js') }}"></script>

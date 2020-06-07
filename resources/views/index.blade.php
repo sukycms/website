@@ -22,12 +22,17 @@
 
                     <div class="flex items-center -mx-2">
                         <div class="w-2/3 px-2">
-                            <x-forms.input :placeholder="__('page.newsletter.email')" required></x-forms.input>
+                            <x-forms.input name="email" :placeholder="__('page.newsletter.email')" required></x-forms.input>
                         </div>
                         <div class="w-1/3 px-2">
-                            <x-submit-button class="w-full mt-4">{{ __('page.newsletter.submit') }}</x-submit-button>
+                            <x-forms.submit-button class="w-full mt-4">{{ __('page.newsletter.submit') }}</x-forms.submit-button>
                         </div>
                     </div>
+                    @if ($errors->has('email'))
+                        <div class="bg-red-500 p-4 mt-6 text-white text-center font-semibold">
+                            {!! $errors->first('email') !!}
+                        </div>
+                    @endif
                 </form>
             </div>
 
