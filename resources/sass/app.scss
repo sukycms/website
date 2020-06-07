@@ -12,4 +12,36 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #222;
+
+}
+
+section {
+    h2 {
+        span {
+            @apply text-blue-600 border-b-2 border-blue-500 pb-2;
+        }
+    }
+}
+
+section.features {
+    background: rgba(237, 242, 247, 1) url('/images/bg-paws-pattern.png') repeat;
+}
+
+section.team {
+    .team-member {
+        img {
+            max-width: 80px;
+        }
+    }
+}
+
+section.more-info {
+    background: url('/images/bg-cats-pattern.png') repeat;
+}
+
+
+footer {
+    img {
+        max-width: 48px;
+    }
 }

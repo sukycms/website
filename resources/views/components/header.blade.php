@@ -8,10 +8,10 @@
             <nav>
                 <ul class="flex flex-row">
                     <x-header.link :url="url('/')">
-                        {{ __('page.sections.shelters') }}
+                        {{ __('page.sections.blog') }}
                     </x-header.link>
                     <x-header.link :url="url('/')">
-                        {{ __('page.sections.blog') }}
+                        {{ __('page.sections.contact') }}
                     </x-header.link>
                     <x-header.link :url="config('sukycms.social.facebook')" _target="blank" title="Facebook">
                         <i class="fab fa-facebook-f fa-fw"></i>
