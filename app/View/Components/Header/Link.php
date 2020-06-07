@@ -6,7 +6,7 @@ use Illuminate\View\Component;
 
 class Link extends Component
 {
-    public string $url = '/';
+    public $url = '/';
 
     /**
      * Create a new component instance.

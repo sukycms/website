@@ -6,8 +6,8 @@ use Illuminate\View\Component;
 
 class Input extends Component
 {
-    public string $id;
-    public string $name;
+    public $id;
+    public $name;
 
     /**
      * Create a new component instance.

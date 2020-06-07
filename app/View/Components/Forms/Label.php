@@ -6,7 +6,7 @@ use Illuminate\View\Component;
 
 class Label extends Component
 {
-    public string $for;
+    public $for;
 
     /**
      * Create a new component instance.
