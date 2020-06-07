@@ -50,7 +50,7 @@
 
             <h2 class="font-semibold text-3xl text-center w-full mb-12">{!! __('page.features.title') !!}</h2>
 
-            <div class="flex flex-wrap flex-col lg:flex-row justify-between items-center -mx-6">
+            <div class="flex flex-wrap flex-col lg:flex-row justify-between -mx-6">
                 <div class="flex flex-col w-full lg:w-1/3 my-8 px-6">
                     <div class="flex flex-row items-center mb-4">
                         <i class="fas fa-check fa-fw text-blue-500 text-2xl mr-4"></i>

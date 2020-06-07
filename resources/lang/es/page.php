@@ -23,27 +23,27 @@ return [
         'title' => 'Las <span>características</span> del proyecto',
         'easy' => [
             'title' => 'Fácil',
-            'description' => 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)',
+            'description' => 'Está pensado para que cualquier persona, con o sin conocimientos en informática, pueda crear y gestionar la página de su asociación. Fácil e intuitivo.',
         ],
         'specialized' => [
             'title' => 'Especializado',
-            'description' => 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)',
+            'description' => 'Está pensado por y para asociaciones de animales. Gestiona desde aspectos básicos como noticias o fichas de los animales hasta la salud, apadrinamientos, donaciones y mucho más.',
         ],
         'free' => [
             'title' => 'Gratis',
-            'description' => 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)',
+            'description' => 'Es tal y como lees. Totalmente gratis. 0€. Sin pagos, nunca, jamás. Es y será siempre gratis. ¿Por qué? Los voluntarios ofrecen su tiempo para salvar vidas, nosotros ofrecemos nuestro tiempo para ayudarles.',
         ],
         'updates' => [
             'title' => 'Actualizaciones',
-            'description' => 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)',
+            'description' => 'SukyCMS se actualiza regularmente. Se aplican parches de seguridad y mejoras contínuamente, todo esto sin que los voluntarios tengan que preocuparse de este aspecto.',
         ],
         'custom' => [
             'title' => 'Personalizable',
-            'description' => 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)',
+            'description' => 'Personaliza todos los aspectos de la página web, desde colores, bloques, textos, títulos, imágenes y mucho más. Todo esto desde un intuitivo panel de administración.',
         ],
         'opensource' => [
             'title' => 'Open Source',
-            'description' => 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)',
+            'description' => 'El código fuente es público. Si no entiendes esto, en resumidas cuentas: cualquier programador/a, diseñador/a o traductor/a puede ver el código y colaborar con el proyecto, desde cualquier zona de la tierra.',
         ],
     ],
 
