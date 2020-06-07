@@ -2,5 +2,14 @@
 @import "~tailwindcss/components";
 @import "~tailwindcss/utilities";
 
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 // Components
 @import "components/header";
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #222;
+}

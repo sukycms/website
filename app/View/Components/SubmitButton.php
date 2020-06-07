@@ -1,21 +1,19 @@
 <?php
 
-namespace App\View\Components\Header;
+namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class Link extends Component
+class SubmitButton extends Component
 {
-    public string $url = '/';
-
     /**
      * Create a new component instance.
      *
-     * @param string $url
+     * @return void
      */
-    public function __construct(string $url)
+    public function __construct()
     {
-        $this->url = $url;
+        //
     }
 
     /**
@@ -25,6 +23,6 @@ class Link extends Component
      */
     public function render()
     {
-        return view('components.header.link');
+        return view('components.submit-button');
     }
 }
