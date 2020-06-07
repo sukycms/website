@@ -13,6 +13,8 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('build/app.css') }}">
     @stack('styles')
+
+    <x-google-analytics></x-google-analytics>
 </head>
 <body>
 
