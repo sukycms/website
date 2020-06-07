@@ -1,6 +1,6 @@
 @if (session()->has('notification'))
     <script>
-        swal({
+        Swal.fire({
             text: '{{ session('notification.text') }}',
             icon: '{{ session('notification.icon') }}',
             timer: '{{ session('notification.timer') }}',

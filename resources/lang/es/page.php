@@ -76,4 +76,11 @@ return [
             ],
         ],
     ],
+
+    'contact' => [
+        'title' => 'Formulario de contacto',
+        'name' => 'Tu nombre',
+        'email' => 'Tu correo electrónico',
+        'message' => 'Escribe tu mensaje:',
+    ]
 ];

@@ -20,6 +20,18 @@ body {
     }
 }
 
+.container {
+    padding: 0 20px;
+
+    @screen lg {
+        padding: 0;
+    }
+}
+
+button:focus {
+    outline: none;
+}
+
 section {
     h2 {
         span {
@@ -36,7 +48,7 @@ section.team {
     .team-member {
         img {
             max-width: 80px;
-            transition: border-radius 1ms, transform 300ms;
+            transition: border-radius 1ms, transform 150ms;
 
             &:hover {
                 border-radius: 0;
