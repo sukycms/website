@@ -1,0 +1,16 @@
+.blog {
+    .blog-post {
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            padding-bottom: 16px;
+            line-height: 26px;
+        }
+
+        a {
+            @apply bg-blue-200 px-1;
+        }
+    }
+}
