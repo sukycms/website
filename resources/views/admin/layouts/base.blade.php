@@ -14,11 +14,19 @@
     <link rel="stylesheet" href="{{ mix('build/app.css') }}">
     @stack('styles')
 </head>
-<body>
+<body class="admin bg-gray-300">
 
     <x-admin.header/>
 
-    @yield('content')
+    <div class="container mx-auto">
+        <div class="flex flex-row">
+            <x-admin.sidebar class="w-64"></x-admin.sidebar>
+
+            <div class="content flex flex-col flex-1 p-8">
+                @yield('content')
+            </div>
+        </div>
+    </div>
 
     <x-admin.footer/>
 

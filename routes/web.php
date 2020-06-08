@@ -18,5 +18,7 @@ Route::group(['prefix' => 'admin'], static function () {
 
     Route::group(['middleware' => 'auth:admin'], static function () {
         Route::get('/', [DashboardController::class, 'dashboard'])->name('admin.dashboard');
+        Route::get('/newsletter', [DashboardController::class, 'newsletter'])->name('admin.newsletter');
+        Route::resource('blog', 'Admin\BlogController')->names('admin.blog');
     });
 });
