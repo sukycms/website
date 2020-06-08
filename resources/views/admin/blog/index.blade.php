@@ -11,17 +11,17 @@
         <table class="table-auto w-full">
             <thead>
             <tr>
-                <th class="px-4 py-2">Title</th>
-                <th class="px-4 py-2">Date</th>
-                <th class="px-4 py-2">Actions</th>
+                <th class="text-left px-4 py-3">Title</th>
+                <th class="text-left px-4 py-3">Date</th>
+                <th class="px-4 py-3"></th>
             </tr>
             </thead>
             <tbody>
             @foreach ($posts as $post)
                 <tr>
-                    <td class="border px-4 py-2">{{ Str::limit($post->title) }}</td>
-                    <td class="border px-4 py-2">{{ $post->published_at->diffForHumans() }}</td>
-                    <td class="border px-4 py-2">
+                    <td class="px-4 py-3">{{ Str::limit($post->title) }}</td>
+                    <td class="px-4 py-3">{{ $post->published_at->format('d/m/Y H:s') }}</td>
+                    <td class="px-4 py-3 flex items-center justify-around">
                         <a href="{{ route('admin.blog.edit', $post) }}"><i class="fas fa-edit text-blue-500"></i></a>
                         <a href="{{ route('admin.blog.destroy', $post) }}"><i class="fas fa-trash-alt text-red-500"></i></a>
                     </td>

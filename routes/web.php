@@ -22,3 +22,10 @@ Route::group(['prefix' => 'admin'], static function () {
         Route::resource('blog', 'Admin\BlogController')->names('admin.blog');
     });
 });
+
+/**
+ * VENDOR
+ */
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth:admin']], function () {
+    \UniSharp\LaravelFilemanager\Lfm::routes();
+});
