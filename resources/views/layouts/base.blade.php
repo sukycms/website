@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="{{ mix('build/app.css') }}">
     @stack('styles')
 
+    <x-header-meta></x-header-meta>
     <x-google-analytics></x-google-analytics>
 </head>
 <body>
@@ -29,7 +30,6 @@
     <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5edf69ffe9c6150012027843&product=inline-share-buttons&cms=sop' async='async'></script>
     <script src="{{ mix('build/app.js') }}"></script>
 
     <x-notification></x-notification>

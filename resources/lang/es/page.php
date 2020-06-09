@@ -2,8 +2,8 @@
 
 return [
 
-    'title' => 'SukyCMS - El gestor gratuito para asociaciones y refugios de animales',
-    'description' => 'SukyCMS es un gestor para asociaciones protectoras y refugios de animales gratuito donde cualquier asociación podrá tener una página web.',
+    'title' => 'SukyCMS - El gestor gratuito para asociaciones de animales',
+    'description' => 'SukyCMS es un gestor para asociaciones protectoras y refugios de animales gratuito donde cualquier asociación podrá crear una página web.',
 
     'newsletter' => [
         'title' => '¡Suscríbete para recibir novedades!',
