@@ -23,7 +23,7 @@ add('writable_dirs', [
 
 // Hosts
 host('sukycms.com')
-    ->user('')
+    ->user('suky')
     ->set('deploy_path', '~/{{application}}');
 
 // Tasks

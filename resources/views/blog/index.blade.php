@@ -6,7 +6,7 @@
 
         <div class="blog container mx-auto my-12">
             <div class="flex blog-post">
-                <div class="w-3/5 mx-auto">
+                <div class="w-full lg:w-3/5 mx-auto">
                     <a href="{{ route('blog.show', ['id' => $post->id, 'slug' => $post->getSlug()]) }}">
                         <h1 class="text-3xl font-semibold mb-4">
                             {{ $post->title }}
