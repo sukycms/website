@@ -39,4 +39,29 @@ class BlogController extends Controller
         flash('Post created successfuly');
         return redirect()->route('admin.blog.index');
     }
+
+    public function edit($id): View
+    {
+        return view('admin.blog.edit', [
+            'post' => Post::find($id),
+        ]);
+    }
+
+    public function update(Request $request, $id): RedirectResponse
+    {
+        $request->validate([
+            'title' => 'required',
+            'published_at' => 'required',
+            'content' => 'required',
+        ]);
+
+        $post = Post::find($id);
+        $post->title = $request->get('title');
+        $post->published_at = $request->get('published_at');
+        $post->content = $request->get('content');
+        $post->save();
+
+        flash('Post updated successfuly');
+        return redirect()->back();
+    }
 }
