@@ -13,7 +13,7 @@
                         </h1>
                     </a>
 
-                    <p class="flex items-center">Escrito por <img src="{{ asset('images/jaimesares.jpg') }}" alt="" class="w-8 rounded-full mx-2"> Jaime Sares el {{ $post->published_at->format('d/m/Y') }}</p>
+                    <p class="flex items-center text-sm">Escrito por <img src="{{ asset('images/jaimesares.jpg') }}" alt="" class="w-8 rounded-full mx-2"> Jaime Sares el {{ $post->published_at->format('d/m/Y') }}</p>
 
                     <div class="blog-post-content mt-12">
                         {!! $post->content !!}
