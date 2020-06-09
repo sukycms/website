@@ -28,11 +28,6 @@
                             <x-forms.submit-button class="w-full mt-6">{{ __('page.newsletter.submit') }}</x-forms.submit-button>
                         </div>
                     </div>
-                    @if ($errors->has('email'))
-                        <div class="bg-red-500 p-4 mt-6 text-white text-center font-semibold">
-                            {!! $errors->first('email') !!}
-                        </div>
-                    @endif
                 </form>
             </div>
 
