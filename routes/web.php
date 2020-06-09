@@ -9,6 +9,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::post('newsletter', [HomeController::class, 'newsletter'])->name('newsletter');
 
 Route::group(['prefix' => 'blog'], static function () {
+    Route::get('/', [BlogController::class, 'index'])->name('blog.index');
     Route::get('{id}-{slug}', [BlogController::class, 'show'])->name('blog.show');
 });
 

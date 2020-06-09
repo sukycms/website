@@ -7,6 +7,9 @@
 
             <nav>
                 <ul class="flex flex-row">
+                    <x-header.link :url="route('blog.index')" _target="blank" title="Blog">
+                        Blog
+                    </x-header.link>
                     <x-header.link :url="config('sukycms.social.facebook')" _target="blank" title="Facebook">
                         <i class="fab fa-facebook-f fa-fw"></i>
                     </x-header.link>

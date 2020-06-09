@@ -12,10 +12,14 @@ set('ssh_multiplexing', false);
 
 // Shared files/dirs between deploys
 add('shared_files', []);
-add('shared_dirs', []);
+add('shared_dirs', [
+    'public/uploads',
+]);
 
 // Writable dirs by web server
-add('writable_dirs', []);
+add('writable_dirs', [
+    'public/uploads',
+]);
 
 // Hosts
 host('sukycms.com')
@@ -27,9 +31,21 @@ task('build', function () {
     run('cd {{release_path}} && build');
 });
 
-// [Optional] if deploy fails automatically unlock.
 after('deploy:failed', 'deploy:unlock');
-
-// Migrate database before symlink new release.
 before('deploy:symlink', 'artisan:migrate');
+after('deploy:update_code', 'sukycms:assets:publish');
 
+task('sukycms:assets:publish', function () {
+    runLocally('yarn run prod');
+
+    upload('public/build', '{{release_path}}/public');
+    upload('public/mix-manifest.json', '{{release_path}}/public');
+});
+
+task('artisan:optimize', function () {
+
+});
+
+task('artisan:route:cache', function () {
+
+});
