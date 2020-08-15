@@ -7,7 +7,7 @@
     <meta property="og:url" content="{{ route('blog.show', ['id' => $post->id, 'slug' => $post->getSlug()]) }}" />
 
     <meta name="twitter:title" content="{{ $post->title }}">
-    <meta name="twitter:description" content="{{ strip_tags(Str::limit($post->content, 200)) }}">
+    <meta name="twitter:description" content="{{ Str::limit(strip_tags($post->content, 200)) }}">
 @endsection
 
 @section('content')
