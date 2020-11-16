@@ -10,7 +10,7 @@
                 <p class="text-4xl md:text-5xl">Suky<i class="fas fa-heart text-red-600"></i>CMS</p>
                 <h1 class="font-light text-xl md:text-3xl my-4">El gestor gratuito <br>para asociaciones de animales</h1>
 
-                <p class="text-sm mt-8 mb-6 italic">El proyecto se encuentra en desarrollo y será lanzado a finales de este año 2020.</p>
+                <p class="text-sm mt-8 mb-6 italic">El proyecto se encuentra en desarrollo y será lanzado a finales de marzo de 2021.</p>
 
                 <form action="{{ route('newsletter') }}" method="POST">
                     @csrf
